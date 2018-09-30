@@ -9,3 +9,4 @@ some TypeScript toy codes
 5. `Diff` and `Filter` for union string, `Omit` for object
 6. a comprehensive example: generic function
 7. another comprehensive example: generic class
+8. Intersection Types and `Partial2`
