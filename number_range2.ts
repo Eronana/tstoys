@@ -21,7 +21,7 @@ type RANGE_60 =  RangeHelper<60, RANGE_40, ARRAY_40>;
 type RANGE_80 =  RangeHelper<80, RANGE_60, ARRAY_60>;
 type RANGE_100 =  RangeHelper<100, RANGE_80, ARRAY_80>;
 
-type Range<T extends number>
+type NumberRange<T extends number>
     = T extends RANGE_20 ? RangeHelper<T, 0, ARRAY_0>
     : T extends RANGE_40 ? RangeHelper<T, RANGE_20, ARRAY_20>
     : T extends RANGE_60 ? RangeHelper<T, RANGE_40, ARRAY_40>
@@ -30,4 +30,4 @@ type Range<T extends number>
     : RangeHelper<T, RANGE_100, ARRAY_100>
     ;
 
-type TEST_RANGE = Range<120>;
+type TEST_RANGE = NumberRange<120>;
